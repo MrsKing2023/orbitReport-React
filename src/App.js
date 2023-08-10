@@ -1,11 +1,16 @@
 import Buttons from "./components/Buttons";
 import Table from "./components/Table";
 import Banner from "./components/Banner";
+import useState from "react";
+import satData.js as satData;
+
 
 
 
 function App() {
-  return (
+    const [sat, setSat] = useState(satData);
+    const displaySats = [...new Set(satData.map((data) => data.orbitType))];
+    
     <div>
       <Banner />
       <Buttons />
@@ -15,3 +20,4 @@ function App() {
 }
 
 export default App;
+localStorage
