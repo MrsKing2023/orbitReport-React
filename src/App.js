@@ -23,13 +23,13 @@ function App() {
 />
 <Table sat={sat} />
 </>
-    //return (
-    //<div>
-    //  <Banner />
-    //  <Buttons />
-    //  <Table />
-    //</div>
-  //);
+    return (
+    <div>
+      <Banner />
+      <Buttons />
+      <Table />
+    </div>
+  );
 }
 
 export default App;
