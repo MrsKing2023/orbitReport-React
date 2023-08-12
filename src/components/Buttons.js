@@ -1,27 +1,20 @@
-import satData from "./components/satData";
+import satData from "./satData";
+import "./styling.css";
 
-
-
-const Buttons = () => {
+const Buttons = ({filterByType, setSat, displaySats}) => {
   return (
-    <div>
-      <button>{sat} Orbit</button>
-      <button>All Orbits</button>
+    <div className="flex-container">
+      {displaySats.map((sat, id) => {
+   return (
+     <button onClick={() => filterByType(sat)} key={id}>
+       {sat} Orbit
+     </button>
+   );
+ })}
       </div>
   );
 };
 
 
-{displaySats.map((sat, id) => {
-  return (
-    <button onClick={() => filterByType(sat)} key={id}>
-      {sat} Orbit
-    </button>
-  );
-})}
-//code continues
-Low Orbit
-Medium Orbit
-High Orbit
 
 export default Buttons;
