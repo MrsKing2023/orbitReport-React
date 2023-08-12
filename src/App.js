@@ -23,10 +23,8 @@ function App() {
   displaySats={displaySats}
 />
 <Table sat={sat} />
-</>
-    
+</> 
 );
-   }
-
+}
 
 export default App;
