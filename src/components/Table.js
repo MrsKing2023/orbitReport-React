@@ -3,12 +3,15 @@ const Table = ({ sat }) => {
   <table>
    <thead>
      <tr>
-        <th>{data.Name}, {data.TypeofSatellite}, {data.LaunchDate}, {data.Status}</th>
-         </tr> set key equal to the id, there are 10 keys to access, maybe 0-10 index?
+        <th>Name</th>
+        <th>Type of Satellite</th>
+        <th>Launch Date</th>
+        <th>Status</th>
+         </tr> 
          </thead>
          <tbody>
          <tr>
-           <td>{data.id}, {data.name}, {data.type},{data.launchDate},{data.orbitType} , {data.operational} </td>
+           <td> {data.operational ? "Active" : "Inactive"} </td>
          </tr>
          </tbody>
        </table>
